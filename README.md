@@ -85,7 +85,7 @@ Note: the icon helper can take a hash of options that will be passed to the cont
 Install the gem
 
 ```sh
-gem install font-awesome-sass
+gem install font-awesome-sass-pro
 ```
 
 If you have an existing Compass project:
@@ -106,14 +106,14 @@ Import the FontAwesome styles
 
 * First [buy the font](https://fontawesome.com/pro)!
 * Download the fonts into the assets directory of your project (typically `app/assets/fonts/font-awesome`)
-* If you're using Sprockets then, depending on your load order, you may have to `prepend` the font path. 
+* If you're using Sprockets then, depending on your load order, you may have to `prepend` the font path. (see below)
 
-In your sass / scss file *before* you import font-awesome (sprockets helper and main file) yo uneed to change the font-family (it defaults to 'Font Awesome 5 Free')
+Then use this in application.css (or scss or whichever you use)
 
-```
-$fa-font-family: 'Font Awesome 5 Pro';
-@import "font-awesome-sprockets";
-@import "font-awesome";
+```scss
+@import 'font-awesome-pro';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 ```
 
 ## Upgrading from FontAwesome::Sass 4.x
