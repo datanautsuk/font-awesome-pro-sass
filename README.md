@@ -1,12 +1,16 @@
-# FontAwesome::Sass
+# FontAwesomePro::Sass
 
 [![Gem Version](https://badge.fury.io/rb/font-awesome-sass.svg)](https://badge.fury.io/rb/font-awesome-sass)
 
-'font-awesome-sass' is a Sass-powered version of [FontAwesome](http://fortawesome.github.io/Font-Awesome/) for your Ruby projects and plays nicely with
+'font-awesome-pro-sass' is a Sass-powered version of [FontAwesome](http://fortawesome.github.io/Font-Awesome/) for your Ruby projects and plays nicely with
  Ruby on Rails, Compass, Sprockets, etc.
 
  Refactored to support more Ruby environments with code and documentation humbly used from the excellent
  [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team
+
+ ## Added support for 'Font Awesome 5 Pro'
+ 
+Whilst this gem does not distribute the pro fonts, it does define all the styles that would be available if you were using Pro. However you will have to add the pro fonts themselves to your own project.
 
 ## Breaking Changes
 
@@ -30,7 +34,7 @@ Please see the appropriate guide for your environment of choice:
 In your Gemfile include:
 
 ```ruby
-gem 'font-awesome-sass', '~> 5.8.1'
+gem 'font-awesome-pro-sass', github: 'datanautsuk/font-awesome-pro-sass'
 ```
 
 And then execute:
@@ -95,6 +99,20 @@ Import the FontAwesome styles
 
 ```scss
 @import "font-awesome-compass";
+@import "font-awesome";
+```
+
+## Using 'Font Awesome 5 Pro'
+
+* First [buy the font](https://fontawesome.com/pro)!
+* Download the fonts into the assets directory of your project (typically `app/assets/fonts/font-awesome`)
+* If you're using Sprockets then, depending on your load order, you may have to `prepend` the font path. 
+
+In your sass / scss file *before* you import font-awesome (sprockets helper and main file) yo uneed to change the font-family (it defaults to 'Font Awesome 5 Free')
+
+```
+$fa-font-family: 'Font Awesome 5 Pro';
+@import "font-awesome-sprockets";
 @import "font-awesome";
 ```
 
