@@ -34,7 +34,7 @@ Please see the appropriate guide for your environment of choice:
 In your Gemfile include:
 
 ```ruby
-gem 'font-awesome-pro-sass', github: 'datanautsuk/font-awesome-pro-sass'
+gem 'font-awesome-pro-sass', git: 'https://github.com/datanautsuk/font-awesome-pro-sass'
 ```
 
 And then execute:
