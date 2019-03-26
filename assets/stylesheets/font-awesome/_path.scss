@@ -2,7 +2,7 @@
  * -------------------------- */
 
  @font-face {
-   font-family: 'Font Awesome 5 Free';
+   font-family: $fa-font-family;
    font-style: normal;
    font-weight: 900;
    src: url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-solid-900.eot'), '#{$fa-font-path}/fa-solid-900.eot'));
@@ -14,7 +14,7 @@
  }
 
  @font-face {
-  font-family: 'Font Awesome 5 Free';
+  font-family: $fa-font-family;
   font-style: normal;
   font-weight: 400;
   src: url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-regular-400.eot'), '#{$fa-font-path}/fa-regular-400.eot'));
@@ -23,6 +23,18 @@
   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-regular-400.woff'), '#{$fa-font-path}/fa-regular-400.woff')) format('woff'),
   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-regular-400.ttf'), '#{$fa-font-path}/fa-regular-400.ttf')) format('truetype'),
   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-regular-400.svg#fontawesome'), '#{$fa-font-path}/fa-regular-400.svg#fontawesome')) format('svg');
+}
+
+@font-face {
+  font-family: $fa-font-family;
+  font-style: normal;
+  font-weight: 300;
+  src: url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-light-300.eot'), '#{$fa-font-path}/fa-light-300.eot'));
+  src: url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-light-300.eot#iefix'), '#{$fa-font-path}/fa-light-300.eot#iefix')) format('embedded-opentype'),
+  url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-light-300.woff2'), '#{$fa-font-path}/fa-light-300.woff2')) format('woff2'),
+  url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-light-300.woff'), '#{$fa-font-path}/fa-light-300.woff')) format('woff'),
+  url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-light-300.ttf'), '#{$fa-font-path}/fa-light-300.ttf')) format('truetype'),
+  url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-light-300.svg#fontawesome'), '#{$fa-font-path}/fa-light-300.svg#fontawesome')) format('svg');
 }
 
 @font-face {
@@ -39,13 +51,19 @@
 
 .fa,
 .fas {
-  font-family: 'Font Awesome 5 Free';
+  font-family: $fa-font-family;
   font-weight: 900;
 }
 
 .far {
-  font-family: 'Font Awesome 5 Free';
+  font-family: $fa-font-family;
   font-weight: 400;
+}
+
+
+.fal {
+  font-family: $fa-font-family;
+  font-weight: 300;
 }
 
 .fab {
