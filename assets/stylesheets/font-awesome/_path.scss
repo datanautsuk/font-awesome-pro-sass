@@ -48,24 +48,3 @@
   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-brands-400.ttf'), '#{$fa-font-path}/fa-brands-400.ttf')) format('truetype'),
   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-brands-400.svg#fontawesome'), '#{$fa-font-path}/fa-brands-400.svg#fontawesome')) format('svg');
 }
-
-.fa,
-.fas {
-  font-family: $fa-font-family;
-  font-weight: 900;
-}
-
-.far {
-  font-family: $fa-font-family;
-  font-weight: 400;
-}
-
-
-.fal {
-  font-family: $fa-font-family;
-  font-weight: 300;
-}
-
-.fab {
-  font-family: 'Font Awesome 5 Brands';
-}
