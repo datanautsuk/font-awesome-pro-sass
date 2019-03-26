@@ -1,6 +1,6 @@
 require 'font_awesome/sass/rails/helpers'
 
-module FontAwesome
+module FontAwesomePro
   module Sass
     module Rails
       class Railtie < ::Rails::Railtie

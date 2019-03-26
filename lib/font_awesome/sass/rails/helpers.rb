@@ -1,4 +1,4 @@
-module FontAwesome
+module FontAwesomePro
   module Sass
     module Rails
       module ViewHelpers

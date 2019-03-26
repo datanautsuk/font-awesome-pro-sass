@@ -5,13 +5,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'font_awesome/sass/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'font-awesome-sass'
-  spec.version       = FontAwesome::Sass::VERSION
-  spec.authors       = ['Travis Chase']
+  spec.name          = 'font-awesome-pro-sass'
+  spec.version       = FontAwesomePro::Sass::VERSION
+  spec.authors       = ['Travis Chase', 'Simon Brook']
   spec.email         = ['travis@fontawesome.com']
   spec.description   = 'Font-Awesome SASS gem for use in Ruby projects'
   spec.summary       = 'Font-Awesome SASS'
-  spec.homepage      = 'https://github.com/FortAwesome/font-awesome-sass'
+  spec.homepage      = 'https://github.com/datanautsuk/font-awesome-pro-sass'
   spec.license       = 'MIT'
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }

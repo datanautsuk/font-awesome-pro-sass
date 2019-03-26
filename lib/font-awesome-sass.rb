@@ -1,4 +1,4 @@
-module FontAwesome
+module FontAwesomeProPro
   module Sass
     class << self
       def load!
@@ -54,7 +54,7 @@ module FontAwesome
 
         ::Compass::Frameworks.register(
           'font-awesome',
-          version: FontAwesome::Sass::VERSION,
+          version: FontAwesomePro::Sass::VERSION,
           path: gem_path,
           stylesheets_directory: stylesheets_path,
           templates_directory: File.join(gem_path, 'templates')
