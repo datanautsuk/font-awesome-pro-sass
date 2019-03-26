@@ -1,4 +1,4 @@
-module FontAwesomeProPro
+module FontAwesomePro
   module Sass
     class << self
       def load!
@@ -74,4 +74,4 @@ module FontAwesomeProPro
   end
 end
 
-FontAwesome::Sass.load!
+FontAwesomePro::Sass.load!
